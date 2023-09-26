@@ -12,7 +12,7 @@ relevant authorities, acting as a bridge between users and responsible entities 
 - TypeScript
 - NodeJS
 ## Table Structure
-![image](https://github.com/oss2019/InstituteFormsPortal/assets/100220049/2f77cefe-fff2-4f3b-880b-f1a2a38eb502)
+![Institue Forms Project Table Structure](https://github.com/oss2019/InstituteFormsPortal/assets/100220049/8c04072e-5c7a-4ab9-a192-6edc7d969cdd)
 [Link to the chart](https://dbdiagram.io/d/Institue-Forms-Project-Table-Structure-651301a9ffbf5169f089f3b0)
 
 ## WorkFlow User
