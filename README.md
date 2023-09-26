@@ -17,3 +17,6 @@ relevant authorities, acting as a bridge between users and responsible entities 
 
 ## WorkFlow User
 ![InstituteFormsWorkflow](https://github.com/oss2019/InstituteFormsPortal/assets/100220049/62edcd18-0536-4e77-8fa8-6a7f5475c9f2)
+
+## WorkFlow Admin
+![InstituteFormsWorkflow - AdminFlowChart](https://github.com/oss2019/InstituteFormsPortal/assets/100220049/1361ab19-861e-4ac1-94c4-5782330a8c15)
