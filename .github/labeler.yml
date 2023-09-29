@@ -1,0 +1,28 @@
+# Add 'repo' label to any root file changes
+repo:
+- '*'
+
+backend:
+- any: ['pages/**']
+
+frontend:
+- any: ['app/**/*.tsx', 'app/**/*.css', 'components/**/*.tsx', 'components/**/*.css']
+
+docker:
+- any: ['.dockerignore', 'Dockerfile']
+
+database:
+- any: ['prisma/schema.prisma']
+
+github_workflow:
+- any: ['.github/**']
+  all: ['!.github/dependabot.yml']
+
+config_change:
+- any: ['*.json', '*.config.js', '.prettierrc']
+
+env:
+- any: ['*.env']
+
+documentation:
+- any: ['*.md']
