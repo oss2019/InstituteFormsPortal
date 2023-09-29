@@ -9,3 +9,49 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model User {
+  id    Int    @id @default(autoincrement())
+  email String @unique
+  name  String
+
+  work_requests WorkRequest[]
+}
+
+model Work {
+  id              Int      @id @default(autoincrement())
+  description     String
+  start_date      DateTime
+  approval_date   DateTime
+  completion_date DateTime
+  work_type       Int
+
+  work_request WorkRequest?
+  //? If work should have more than one request, use:
+  // work_requests WorkRequest[]
+}
+
+model Authority {
+  id  Int    @id @default(autoincrement())
+  name String
+  email String @unique
+  work_type Int
+
+  work_requests WorkRequest[]
+}
+
+model WorkRequest {
+  rating Float
+
+  work_id Int  @unique //? remove @unique if work can have more than one request
+  work    Work @relation(fields: [work_id], references: [id])
+
+  user_id Int
+  user    User @relation(fields: [user_id], references: [id])
+
+  approving_authority_id Int
+  approving_authority Authority @relation(fields: [approving_authority_id], references: [id])
+
+
+  @@id([work_id, user_id])
+}
